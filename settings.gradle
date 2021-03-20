@@ -1,0 +1,5 @@
+include ':app'
+rootProject.name = "3D Tour & AR Estate"
+
+include ':tour3d'
+project(':tour3d').projectDir=new File('H:/AndroidStudioProjects/android/3DTourAREstate/tour3d')
