@@ -1,7 +1,10 @@
 package com.example.a3dtourarestate.model
 
-data class Estate(var id: String?) {
+import com.google.gson.annotations.SerializedName
 
-    var modelObject: Any? = null
-
-}
+data class Estate(
+    val id: String,
+    val name: String,
+    val description: String,
+    val price: String,
+    @SerializedName("thumbnailUrl") val thumbnailUrl: String)
